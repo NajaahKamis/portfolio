@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f8f07744b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="containter-flex" id="mainContainer">
+        <div class="row p-0 m-0" id="wrapper">
+            <div class="col-lg-3 col-md-12" id="navigation">
+                <div class="row justify-content-center  mb-3">
+                    <img src="images/profile.png">
+                </div>
+                <div class="row justify-content-center">
+                    <a class="btn m-0 p-0" style="color:white;" onclick="welcome()">
+                        <h4>NAJAAH KAMIS</h4>
+                    </a>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <a style="color:white; cursor:pointer;" onclick="welcome()">
+                        <p>JUNIOR WEB DEVELOPER</p>
+                    </a>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="navbar-brand ">
+                            <a class="navbar-brand d-inline btn m-0 p-0" href="mailto: najjkamis@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a class="navbar-brand d-inline btn m-0 p-0" href="https://github.com/NajaahKamis" target="_blank"><i class="fab fa-github-square"></i></a>
+                            <a class="navbar-brand d-inline btn m-0 p-0" href="https://www.linkedin.com/in/najj-kamis-3b2a35211/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a class="navbar-brand d-inline btn m-0 p-0" href="https://www.facebook.com/khairunajaah.kamis/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon p-0"><i class="fas fa-bars align-middle" style="font-size: 30px; color:rgba(255, 255, 255, 0.658);"></i></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
+                            <ul class="p-0">
+                                <li class="nav-item">
+                                    <a class="nav-link btn" onclick="aboutMe()" id="aboutMeLink">ABOUT ME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn" onclick="experience()" id="experienceLink">EXPERIENCES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn" onclick="projects()" id="projectLink">PROJECTS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn" href="https://drive.google.com/file/d/1C9k08qxggCdxlvZbqoiH2sYgwNRusA82/view?usp=sharing" target="_blank">CV</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!--END OF NAV-->
+                </div>
+                <div class="row contact">
+                    <p>Contact Me</p>
+                </div>
+                <div class="row contact">
+                    <a class="btn m-0 p-0" href="mailto: najjkamis@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a class="btn m-0 p-0" href="https://github.com/NajaahKamis" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a class="btn m-0 p-0" href="https://www.linkedin.com/in/najj-kamis-3b2a35211/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="btn m-0 p-0" href="https://www.facebook.com/khairunajaah.kamis/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <!--END OF SIDEBAR-->
+            <div class="col-lg-9 col-md-12" id="welcome">
+                <h1>Hi,</h1>
+                <h1><b>My name is Najaah Kamis,</b></h1>
+                <h2>a junior full-stack developer.</h2>
+                <div class="row" id="welcome-nav">
+                    <button onclick="aboutMe()">ABOUT ME</button>
+                    <button onclick="projects()">PROJECTS</button>
+                </div>
+            </div>
+            <!--End of welcome page-->
+            <div class="col-lg-9 col-md-12" id="aboutMe">
+                <div class="row mb-4">
+                    <div class="col-lg-6">
+                        <h4>About Me</h4>
+                        <p>I'm a junior full-stack web developer. Currently taking 6 months web development course at Coding Bn. You can <a class="btn m-0 p-0" onclick="projects()" style="color:rgb(179, 37, 37);"><b>click here</b></a>,
+                            or visit my <a class="btn m-0 p-0" href="https://github.com/NajaahKamis" target="_blank" style="color:rgb(179, 37, 37);"><b>github page</b></a> to see all my work during this course.</p>
+                    </div>
+                </div>
+                <h4>Personal Details</h4>
+                <div class="row mt-2 mb-5">
+                    <div class="col-lg-4 col-md-4 mb-3" id="details">
+
+                        <h5><b>Bio</b></h5>
+                        <p class="mb-0"><b>Name :</b></p>
+                        <p>Md. Khairunajaah bin Haji Kamis</p>
+                        <p class="mb-1"><b>Age :</b> 31</p>
+                        <p class="mb-1"><b>Email :</b> najjkamis@gmail.com</p>
+                        <p class="mb-1"><b>Location :</b> Brunei Darussaalam</p>
+
+
+                    </div>
+                    <div class="col-lg-4 col-md-4" id="strength">
+                        <h5><b>Strength</b></h5>
+                        <p>Hardwork <span class="ml-3"><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="far fa-circle"></i></span></p>
+                        <p>Teamwork <span class="ml-3"><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i></span></p>
+                        <p>Creativity <span class="ml-3"><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="far fa-circle"></i></span> </p>
+                        <p>Communication <span class="ml-3"><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i><i class="fas fa-circle check"></i></span></p>
+
+                    </div>
+                </div>
+
+                <h4>Technical Skills</h4>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mb-3" id="skills">
+                        <h5><b>Skills</b></h5>
+                        <div class="row">
+                            
+                                <ul class="mb-0">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>JavaScript</li>
+                                    <li>Vue JS</li>
+                                    <li>ASP.NET Core MVC</li>
+                                    <li>Umbraco</li>
+                                    <li>Java</li>
+                                    <li>C#</li>
+                                    <li>MicroPython</li>
+                                </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4" id="tools">
+                        <h5><b>Tools</b></h5>
+                        <div class="row">
+                            
+                                <ul class="mb-0">
+                                    <li>Visual Studio Code</li>
+                                    <li>Visual studio 2019</li>
+                                    <li>Figma</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>InkScape</li>
+                                    <li>MongoDB Atlas</li>
+                                    <li>Microsoft SQL</li>
+                                    <li>MS Office</li>
+                                    <li>Netbeans</li>
+                                </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of About Me page-->
+
+            <div class="col-lg-9 col-md-12" id="work">
+                <h1>Working Experience</h1>
+                <div class="timeline" id="timeline">
+                    <p class="year mb-0 p-1 ">2021</p>
+                    <p class="mb-0">Mar-</p>
+                    <p>Now</p>
+                    <div class="container right ">
+                        <div class="content ">
+                            <h5>Coding BN</h5>
+                            <p><i>Programming Course</i></p>
+                            <p>Coding BN is a 6 months programming course initiated by AITI. This course focuses on full-stack web development. 
+                                Which includes:
+                            </p>
+                            <div class="row mt-1">
+                                <div class="col-lg-4 col-md-10">
+                                    <ul>
+                                        <li>HTML and CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>Node and NPM</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-10">
+                                    <ul>
+                                        <li>Express JS</li>
+                                        <li>Mongoose</li>
+                                        <li>MongoDB</li>
+                                        <li>Vue Framework</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <p>In additional, as part of the 6 months course, I am currently doing my internship at AITI. I am assigned to be a frontend developer for AITI new portal.
+                                Below are some new technical skills I have personally gained during this internship:
+                            </p>
+                            <ul class="mt-1">
+                                <li>ASP.NET Core MVC</li>
+                                <li>Umbraco</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="year mb-0 p-1">2019</p>
+                    <p class="mb-0 p-1">Mar -</p>
+                    <p>Sept</p>
+                    <div class="container right">
+                        <div class="content">
+                            <h5>Zyrus Company</h5>
+                            <p><i>IT Technicians</i></p>
+                            <p>Installation and configuration of CCTV (HikVision) as well as Intruder Alarm Systems (Paradox). These includes: </p>
+                            <ul>
+                                <li>
+                                    Designing network / cable layout
+                                </li>
+                                <li>
+                                    Terminating Network Cables - Ethernet and Fibre Optic (splicing)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="year mb-0 p-1">2016</p>
+                    <p class="mb-0">May -</p>
+                    <p>Aug</p>
+                    <div class="container right">
+                        <div class="content ">
+                            <h5>Khon Kaen University, Thailand</h5>
+                            <p><i>Research Assistant (UBD Internship Programme)</i></p>
+                            <p> My main task during this internship was to assist the researcher to build a circuit prototype based on drawings and specifications that was given to me.</p>
+
+                        </div>
+                    </div>
+                    <p class="year mb-0 p-1">2013</p>
+                    <p class="mb-0">Oct -</p>
+                    <p>Dec</p>
+                    <div class="container right">
+                        <div class="content">
+                            <h5>Land Transport Department</h5>
+                            <p><i>IT Officer Assistant (Internship Program)</i></p>
+                            <p>A part of Polytechnic Internship Programme. My main task during this intership was to assist the officers with troubleshooting computer hardware and network. I was also involved with the implementation of the new system, SiKAP</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Work Page-->
+
+            <div class="col-lg-9 col-md-12" id="project">
+                <h1>Projects</h1>
+
+                <div class="row mb-5" id="pmt">
+                    <div class="col-lg-6 col-md-12">
+                        <h3>Project Management Tracker</h3>
+                        <p><b>14 Jun 2021 (On going)</b></p>
+                        <p>Project Management Tracker is a web application designed for local organisation to keep track of their projects.
+                            It is design using MEVN stack development (MongoDB, Express JS, Vue JS, Node JS).
+                            By using this web application user can: </p>
+                        <ul>
+                            <li>Create an Account</li>
+                            <li>Create or Edit a Project</li>
+                            <li>Create or Edit Tasks within the Project</li>
+                            <li>Assigned or invite other user to be a part of a Project</li>
+                            <li>Assigned User then can grabbed any tasks within the assigned Project</li>
+                            <li>Mark the tasks as "Completed" or "In Progress"</li>
+                        </ul>
+                        <a class="btn" href="https://brunei-pmt.herokuapp.com" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>view online</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="screenshot">
+                        <p>Screenshots (click to enlarge):</p>
+                        <img id="template" src="images/pmt1.JPG">
+                        <img id="template" src="images/pmt2.JPG">
+                        <img id="template" src="images/pmt3.JPG">
+                        <img id="template" src="images/pmt4.JPG">
+                        <img id="template" src="images/pmt5.JPG">
+                    </div>
+                </div>
+                <!--end of covid-->
+
+                <div class="row mb-5" id="covid">
+                    <div class="col-lg-6 col-md-12">
+                        <h3>CovidInfo</h3>
+                        <p><b>26 May 2021</b></p>
+                        <p>CovidInfo is an API based website designed to bring user the latest info on global Covid-19 statistics. This is a part of CodingBN assignments, where the participants were assigned to build an API based website. So our team decided
+                            to use Covid-19 API from Rapid API website. Here are some of the features for this project:</p>
+                        <ul>
+                            <li>A world map - divided into 6 continents which can be navigate using the navbar</li>
+                            <li>Statistics for each continent (confirmed case, and death count)</li>
+                            <li>Each country on the map will be color coded based on total confirmed case per population</li>
+                            <li>You can click on the map to see the full statistics of the selected country, or you can use the search option</li>
+                            <li>Current Global Statistics</li>
+                            <li>Charts showing the top 10 country for each of these cases - total confirmed case, total death, new case, and total recovered case</li>
+                        </ul>
+                        <a class="btn" href="https://najaahkamis.github.io/covidinfo/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>view online</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="screenshot">
+                        <p>Screenshots (click to enlarge):</p>
+                        <img id="template" src="images/covidinfo1.PNG">
+                        <img id="template" src="images/covidinfo3.PNG">
+                        <img id="template" src="images/covidinfo2.PNG">
+                    </div>
+                </div>
+                <!--end of covid-->
+
+                <div class="row mb-5" id="game">
+                    <div class="col-lg-6 col-md-12">
+                        <h3>Memory Games</h3>
+                        <p><b>12 April 2021</b></p>
+                        <p>A simple memory game where the user have to find all 8 pairs of matching rocks to win the game. Here are some features for this project: </p>
+                        <ul>
+                            <li>Interactive sound effects and background music</li>
+                            <li>A mute button to mute all sound effects and background music</li>
+                            <li>Simple animations i.e flipping rocks, pop up messages</li>
+                            <li>A timer and a turn counter features as a scoring system</li>
+                            <li>A reset button, to restart the game</li>
+                            <li>When the user completed the game, the user will be prompt to enter their username.</li>
+                            <li>A scoreboard button to show the top 5 users</li>
+                        </ul>
+                        <a class="btn" href="https://najaahkamis.github.io/memorygames/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>view online</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="screenshot">
+                        <p>Screenshots (click to enlarge):</p>
+                        <img id="template" src="images/game1.jpg">
+                        <img id="template" src="images/game2.jpg">
+                        <img id="template" src="images/game3.jpg">
+                        <img id="template" src="images/game4.jpg">
+                    </div>
+                </div>
+                <!--end of game-->
+
+                <div class="row" id="textEditor">
+                    <div class="col-lg-6 col-md-12">
+                        <h3>Text Editor</h3>
+                        <p><b>26 March 2021</b></p>
+                        <p>First javascript assignment for this course. Build using pure vanilla javascript. Here are some features for this project: </p>
+                        <ul>
+                            <li>User will be able to choose between creating new file, or edit recently saved files</li>
+                            <li>Some tools features for the text editor i.e. Font Selection, Font Size, Bold, Italic, Uderline, Justify (left, center,or right)</li>
+                            <li>Save button features - user will be able to save their document using local storage.</li>
+                            <li>The last saved time is shown on the bottom right of the text editor</li>
+                            <li>"Unsaved" indicator will appear beside the title on top of the text editor if there are any changes made to the file. This indicator will disappear once the user saved the file.</li>
+                            <li>Open documents button - enable the user to go back to homepage. The user will be alerted if the file has not been saved before returning to home page</li>
+                            <li>A word count indicator on the bottom left of the text editor</li>
+                        </ul>
+                        <a class="btn" href="https://najaahkamis.github.io/texteditor/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>view online</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12" id="screenshot">
+                        <p>Screenshots (click to enlarge):</p>
+                        <img id="template" src="images/textEditor1.PNG">
+                        <img id="template" src="images/textEditor2.PNG">
+                    </div>
+                </div>
+            </div>
+            <!--End of Work Page-->
+        </div>
+        <!--End of wrapper-->
+        <!-- The Modal -->
+        <div id="picEnlarge" class="enlarge">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="enlarge-content" id="popUp">
+            <!-- Modal Caption (Image Text) -->
+        </div>
+    </div>
+    <script src="javascript/script.js " async></script>
+</body>
+
+</html>

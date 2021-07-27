@@ -1,0 +1,383 @@
+    body {
+        font-family: 'Varela Round', sans-serif!important;
+        padding: 0;
+        margin: 0;
+        background-image: url('../images/background.jpg');
+        background-size: 100% 100%;
+    }
+    
+    #mainContainer {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #wrapper {
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #wrapper img {
+        height: 150px;
+    }
+    
+    #navigation {
+        color: rgba(255, 255, 255, 0.589);
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: rgba(9, 74, 117, 0.842);
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .navbar-brand {
+        color: rgba(255, 255, 255, 0.767);
+        margin-right: 0!important;
+        display: none!important;
+    }
+    
+    .nav-item .active {
+        color: white!important;
+        font-weight: bold;
+        text-decoration: underline!important;
+        transition: 0.7s;
+    }
+    
+    #navigation::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #navigation .btn {
+        color: rgba(255, 255, 255, 0.589);
+        text-align: start;
+        padding: 5px 16px;
+        outline: none;
+    }
+    
+    #navigation li {
+        list-style: none;
+    }
+    
+    .contact {
+        padding-left: 40px;
+    }
+    
+    .contact .fas,
+    .contact .fab {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    
+    .contact .btn {
+        color: rgba(255, 255, 255, 0.712);
+    }
+    
+    #navigation .btn:hover {
+        color: white;
+        font-weight: bold;
+        transition: 0.7s;
+    }
+    
+    #welcome {
+        padding: 40px 40px;
+        color: rgba(255, 255, 255, 0.904);
+        text-shadow: 1px 2px black;
+    }
+    
+    #welcome-nav button {
+        color: rgba(255, 255, 255, 0.904);
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.904);
+        margin: 20px 0px 20px 10px;
+        text-shadow: 1px 2px black;
+        box-shadow: 1px 2px black;
+        cursor: pointer;
+    }
+    /*ABOUT ME SECTION*/
+    
+    #aboutMe {
+        display: none;
+        background-color: white;
+        padding: 40px 70px;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    #aboutMe h4 {
+        color: rgb(27, 108, 161);
+        font-weight: bold;
+    }
+    
+    #details,
+    #strength,
+    #skills,
+    #tools {
+        min-width: max-content;
+    }
+    
+    #strength p {
+        margin-bottom: 5px;
+    }
+    
+    .check {
+        margin-right: 2px;
+        color: rgb(27, 108, 161);
+    }
+    
+    .uncheck {
+        color: white;
+    }
+    /*WORK SECTION*/
+    
+    #work {
+        display: none;
+        background-color: white;
+        box-sizing: border-box;
+        padding-top: 40px;
+        padding-left: 40px;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .year {
+        width: max-content;
+        position: relative;
+    }
+    
+    .timeline {
+        position: relative;
+        width: 80%;
+        margin: 20px 0px 0px;
+        padding: 0;
+    }
+    /* The actual timeline (the vertical ruler) */
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.171);
+        top: 10px;
+        bottom: 0;
+        left: 59px;
+        margin-left: -3px;
+    }
+    /* Container around content */
+    
+    .timeline .container {
+        position: relative;
+        top: -85px;
+        background-color: inherit;
+    }
+    /* The square on the timeline */
+    
+    .year::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(179, 37, 37);
+        top: 10px;
+        right: -13px;
+        z-index: 1;
+    }
+    /* Place the container to the right */
+    
+    .right {
+        top: -15px;
+        left: 60px;
+    }
+    /* Fix the square for containers on the right side */
+    
+    .right::after {
+        left: -16px;
+    }
+    /* The actual content */
+    
+    .content {
+        padding: 0;
+        position: relative;
+        width: auto;
+    }
+    
+    .content p {
+        margin-bottom: 0;
+    }
+    /*PROJECT SECTION*/
+    
+    #project {
+        display: none;
+        background-color: white;
+        padding: 40px 70px;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    #project .btn {
+        padding: 10px;
+        background-color: rgb(9, 74, 117);
+        color: white;
+        border: none;
+    }
+    
+    #screenshot {
+        width: 100%;
+    }
+    /* Image pop up for screenshots images*/
+    
+    #template {
+        margin: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    #template:hover {
+        opacity: 0.7;
+    }
+    /* The Modal (background) */
+    
+    .enlarge {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 50px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+    /* Modal Content (Image) */
+    
+    .enlarge-content {
+        margin: auto;
+        display: block;
+        max-width: 700px;
+        max-height: 600px;
+    }
+    /* Add Animation - Zoom in the Modal */
+    
+    .enlarge-content {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+    /* The Close Button */
+    
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: white!important;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /* 100% Image Width on Smaller Screens */
+    
+    @media only screen and (max-width: 700px) {
+        .enlarge-content {
+            width: 100%;
+        }
+    }
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    
+    @media only screen and (max-width: 992px) {
+        body {
+            background-size: auto;
+            background-image: none;
+        }
+        #wrapper {
+            height: 100%;
+        }
+        #navigation {
+            height: max-content;
+            padding-bottom: 5px;
+            overflow: none!important;
+        }
+        #mainContainer {
+            overflow: scroll;
+            height: 100%;
+        }
+        #welcome {
+            background-image: url('../images/background.jpg');
+            background-size: auto;
+            height: 100vh;
+        }
+        #aboutMe {
+            height: 100%;
+            overflow: none!important;
+        }
+        #work {
+            height: 100%;
+            overflow: none!important;
+        }
+        #screenshot {
+            margin-top: 30px;
+        }
+        .navbar-brand {
+            display: block!important;
+        }
+        .contact {
+            display: none!important;
+        }
+        #navigation .btn {
+            text-align: end;
+            padding: 5px 16px;
+        }
+        .navbar-expand-lg {
+            width: 100%;
+        }
+        .nav-link {
+            text-align: center!important;
+        }
+    }
+    
+    @media only screen and (max-width: 550px) {
+        .timeline::after {
+            display: none;
+        }
+        .year::after {
+            display: none;
+        }
+        .timeline .container {
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+        }
+        .year {
+            background-color: cadetblue;
+        }
+    }
